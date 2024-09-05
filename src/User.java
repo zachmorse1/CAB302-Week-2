@@ -3,8 +3,15 @@ import java.util.ArrayList;
 public class User {
     private String username;
     private String password;
-
     private ArrayList<ToDoItem> toDoItems;
+
+    /**
+     * Gets the to-do items of the user.
+     * @return A reference to the list of to-do items, which can be modified from outside the class.
+     */
+    public ArrayList<ToDoItem> getToDoItems() {
+        return toDoItems;
+    }
 
     public User(String username, String password) {
         this.username = username;
